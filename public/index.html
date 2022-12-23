@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDSC</title>
+</head>
+<body>
+    <h1>GDSC Starter Project</h1><br>
+    <h3>Register</h3>
+    <form action="/action_page.php" id="registerForm">
+        <label for="name">Name:</label>
+        <input type="text" id="registerName" name="name" required>
+        <label for="roll">Roll:</label>
+        <input type="text" id="registerRoll" name="roll" required>
+        <input type="submit"><br><br>
+    </form>
+    <h3>Get all Students</h3>
+    <button id="getInfo">Get</button><br><br>
+    <h3>Update Student</h3>
+    <form action="" id="updateInfo">
+        <label for="id">Old Roll no.</label>
+        <input type="text" id="oldRoll" name="id" placeholder="Enter your current roll no." required>
+        <label for="name">New Name</label>
+        <input type="text" id="updateName" placeholder="Leave empty if no change" name="name">
+        <label for="roll">New Roll no.</label>
+        <input type="text" id="updateRoll" placeholder="Leave empty if no change" name="roll">
+        <input type="submit"><br><br>
+    </form>
+    <h3>Delete Student</h3>
+    <form action="" id="deleteInfo">
+        <label for="id">Your Roll no.</label>
+        <input type="text" id="deleteRoll" name="id" placeholder="Enter your current roll no." required>
+        <input type="submit"><br><br>
+    </form>
+
+    <script src="./index.js"></script>
+</body>
+</html>
